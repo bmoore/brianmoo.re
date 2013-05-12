@@ -1,0 +1,22 @@
+footer {
+  color:#ccc;
+  background: url('../img/thatch-dark.png');
+  padding:20px 0px;
+  section {
+    margin: 10px 0px;
+  }
+  .feed-bar {
+    background-color:rgba(0,0,0,.2);
+    margin-top:20px;
+    padding:10px 0px;
+    border-bottom:solid 1px;
+    border-top:solid 1px;
+    border-color:#0a0a0a;
+    .twitter_feed_icon {
+      text-align:center;
+      img {
+        width:60px;
+      }
+    }
+  }
+}

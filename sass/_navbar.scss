@@ -1,0 +1,108 @@
+.navbar {
+  margin-bottom:0px;
+  .navbar-inner {
+    background-color: rgba(240,240,240,.2);
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(230,230,230,.3));
+    border-width:0px;
+    border-radius:0px;
+    padding:0px 5px;
+
+    .container {
+      margin:10px 0px;
+      .brand {
+        margin-left:-5px;
+        padding:5px;
+        color:$mid-dark-grey;
+        &:hover {
+          color:$dark-grey;
+        }
+        img {
+          max-height:90px;
+          margin-right:10px;
+          float:left;
+          @media screen and (max-width: $break-small) {
+              max-height: 70px;
+          }
+          @media screen and (max-width: $break-tiny) {
+              max-height: 60px;
+          }
+        }
+        .logo {
+          float:left;
+          .logo_title {
+            display:block;
+            float:left;
+            font-size:40px;
+            line-height:42px;
+            padding-top:10px;
+            font-family: Chunk, serif;
+            @media screen and (max-width: $break-small) {
+              font-size: 30px;
+            }
+            @media screen and (max-width: $break-tiny) {
+              font-size:25px;
+            }
+          }
+          .logo_subtitle {
+            display:block;
+            float:left;
+            clear:left;
+            font-size:12px;
+            @media screen and (max-width: $break-small) {
+              font-size:10px;
+            }
+          }
+        }
+      }
+      .btn-navbar {
+        float: right;
+        .nb_left {
+          padding:4px;
+        }
+        .nb_right {
+          font-weight:bold;
+          font-size:18px;
+          padding:3px;
+          color:$dark-grey;
+        }
+      }
+    }
+  }
+  .nav {
+    &>li>a {
+      color:$mid-dark-grey;
+      border-radius:3px;
+      margin:1px;
+    }
+    .active {
+      a, a:hover {
+        color:$dark-grey;
+        box-shadow:none;
+        background-color:$mid-light-grey;
+      }
+    }
+  }
+}
+
+.navbar-inverse {
+  .btn-navbar {
+    background-color: $light-grey;
+    background-image: -webkit-linear-gradient(top, $light-grey, $mid-light-grey);
+    .icon-bar {
+      background-color: $dark-grey;
+    }
+    &:hover {
+      background-color:$mid-light-grey;
+    }
+  }
+  .nav-collapse {
+    .nav {
+      li {
+        a:hover, &.dropdown.open>.dropdown-toggle {
+          background-color:$mid-light-grey;
+          background-image: -webkit-linear-gradient(top, $light-grey, $mid-light-grey);
+        }
+      }
+    }
+  }
+}
