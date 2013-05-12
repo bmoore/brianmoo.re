@@ -2,9 +2,11 @@
     border:none;
     border-radius:0px;
     li {
-        height:300px;
         background-size:cover;
         background-position:center;
+    }
+    .container {
+        height:350px;
     }
     text-shadow:rgba(70,70,70,.5) 2px 2px 0px;
 }
